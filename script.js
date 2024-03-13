@@ -1,24 +1,31 @@
 //complete this code
 class Rectangle {
-	constructor(width: number, height: number){
-		this.width=width: number
+	constructor(width,height){
+		this._width=width;
+		this._height=height
+		
 	}
 	getWidth(){
-		return width: number;
+		return this._width;
 	}
 	getHeight(){
-		return height:number;
+		return this._height;
 	}
 	getArea(){
-		return ;
+		    return this._width * this._height;;
 	}
 }
 
 
 class Square extends Animal {
-	constructor(side: number){
-		
+	constructor(side){
+    super(side, side);
+    this._side = side;
 	}
+	getPerimeter(){
+		 return 4 * this._side;
+	}
+	
 }
 const rectangle = new Rectangle(5, 10);
 console.log(rectangle.width); // Output: 5
