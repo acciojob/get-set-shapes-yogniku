@@ -2,22 +2,28 @@
 class Rectangle {
 	constructor(width,height){
 		this._width=width;
-		this._height=height
-		
+		this._height=height	
+        this._width=width;
+        this._height=height;
 	}
-	getWidth(){
-		return this._width;
+    getWidth(){
+     Rectangle.getWidth(this._width)
+	//getWidth(width){
+	return  width-this._width;
 	}
-	getHeight(){
-		return this._height;
-	}
+    getheight(){
+        Rectangle.getheight(this._height)
+       //getWidth(width){
+       return  width-this._height;
+       }
+       
 	getArea(){
 		    return this._width * this._height;;
 	}
 }
 
 
-class Square extends Animal {
+class Square extends Rectangle {
 	constructor(side){
     super(side, side);
     this._side = side;
