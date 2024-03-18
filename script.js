@@ -3,19 +3,20 @@ class Rectangle {
 	constructor(width,height){
 		this._width=width;
 		this._height=height	
-        this._width=width;
-        this._height=height;
+        
 	}
-    getWidth(){
-     Rectangle.getWidth(this._width)
-	//getWidth(width){
-	return  width-this._width;
+    get width(){
+	return  this._width;
 	}
-    getheight(){
-        Rectangle.getheight(this._height)
-       //getWidth(width){
-       return  width-this._height;
+	set width(width){
+		this._width=width;
+	}
+    get height(){
+       return this._height;
        }
+	set height(height){
+		this._height=height;	
+	   }
        
 	getArea(){
 		    return this._width * this._height;;
@@ -46,3 +47,4 @@ console.log(square.getPerimeter()); // Output: 28
 // Do not change the code below this line
 window.Rectangle = Rectangle;
 window.Square = Square;
+
